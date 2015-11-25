@@ -1,0 +1,13 @@
+<h1 ng-click="activate()" ng-class="{'activeCss':active}">{{friend.name}}</h1>
+<div ng-show="active">
+    Details
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, ipsum!
+</div>
+<div ng-hide="active">
+    Kukuruku
+</div>
+<input type="text" ng-model="friend.name">
+
+<ul id='diff'>
+    <li ng-repeat="change in changes track by $index" ng-click="backTo(change)">{{$index}}{{change}}</li>
+</ul>

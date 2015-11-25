@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Kukuruku">
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/javascripts/script.min.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <style>
+        .activeCss{
+            color:red;
+        }
+    </style>
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body ng-controller="homeController">
+    <div id="view" ng-view>
+        
+    </div>
   </body>
 </html>
